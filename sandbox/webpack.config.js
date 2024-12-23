@@ -8,7 +8,7 @@ module.exports = {
     filename: 'bundle.js',
   },
   resolve: {
-    extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
+    extensions: ['.ts', '.tsx', '.js', '.jsx', '.json', '.scss'],
   },
   module: {
     rules: [
@@ -25,6 +25,14 @@ module.exports = {
         test: /\.jsx?$/,
         use: 'babel-loader',
         exclude: /node_modules/,
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader',
+        ],
       },
     ],
   },

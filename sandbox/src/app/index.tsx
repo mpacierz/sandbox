@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
+import '../assets/styles/main.scss'; 
 
 const rootElement = document.getElementById('root');
-console.log('rrrr', rootElement)
+
 if (rootElement) {
   const root = ReactDOM.createRoot(rootElement);
   root.render(

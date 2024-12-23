@@ -1,16 +1,17 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import StartPage from './components/StartPage/StartPage';
 
 const App = () => {
-  return (
-    <Router>
-      <div>
-        <Routes>
-          <Route path="/" element={<div>Strona główna</div>} />
-        </Routes>
-      </div>
-    </Router>
-  );
+    return (
+        <div className='sandbox'>
+            <Router>
+                <Routes>
+                    <Route path="/" element={<StartPage />} />
+                </Routes>
+            </Router>
+        </div>
+    );
 }
 
 export default App;
