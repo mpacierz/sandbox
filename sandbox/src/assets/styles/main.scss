@@ -1,1 +1,6 @@
-@import 'start_page';
+@use './start-page/start-page';
+
+body {
+    padding: 0px;
+    margin: 0px;
+}

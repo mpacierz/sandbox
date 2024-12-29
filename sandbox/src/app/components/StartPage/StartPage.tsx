@@ -1,12 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const StartPage: React.FC = () => {
     return (
-        <div className='sandboox-start-page'>
-            <ul>
-                <li>test1</li>
-                <li>HP5 test</li>
-            </ul>
+        <div className='sandbox-start-page'>
+            <Link to='/h5p' className='start-page-nav'>HP5 test</Link>
+            <Link to='/' className='start-page-nav'>test1</Link>
         </div>
     );
 }
